@@ -184,7 +184,7 @@ CREATE TABLE IF NOT EXISTS Atenciones (
 );
 
 -- Create index on FechaAjuste
-CREATE INDEX idx_atenciones_fecha_atencion ON Ajustes(FechaAtencion);
+CREATE INDEX idx_atenciones_fecha_atencion ON Atenciones(FechaAtencion);
 
 
 CREATE TABLE IF NOT EXISTS ProcedimientosAtencion (
