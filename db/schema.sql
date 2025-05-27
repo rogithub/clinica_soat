@@ -153,8 +153,9 @@ CREATE TABLE IF NOT EXISTS PreciosProcedimientos (
     ProcedimientoId    INTEGER NOT NULL,
     FactorCobroId      INTEGER NULL,              -- Nulo si es solo precio 
     FechaCreado   TIMESTAMP NOT NULL,          -- Changed to TIMESTAMP for date and time
-    PrecioPesos           DECIMAL(18, 2),            -- Se debe capturar ya sea el precio en pesos o las unidades de factor
-    UnidadesFactorCobro   DECIMAL(18, 2),            -- de cobro, el valor contrario será nulo
+
+    PrecioPesos           DECIMAL(18, 2),            -- Si se especifica UnidadesFactorCobro, entonces PrecioPesos debe ser NULL, y viceversa.
+    UnidadesFactorCobro   DECIMAL(18, 2),            -- Implementar validación por trigger en el futuro.
     UserUpdatedId UUID,
     PRIMARY KEY(Id),
     FOREIGN KEY(ProcedimientoId) REFERENCES Procedimientos(Id) ON DELETE CASCADE,
