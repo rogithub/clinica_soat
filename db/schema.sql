@@ -159,7 +159,7 @@ CREATE TABLE IF NOT EXISTS PreciosProcedimientos (
     PRIMARY KEY(Id),
     FOREIGN KEY(ProcedimientoId) REFERENCES Procedimientos(Id) ON DELETE CASCADE,
     FOREIGN KEY(UserUpdatedId) REFERENCES Users(Id) ON DELETE SET NULL,
-    FOREIGN KEY(SalarioMinimoId) REFERENCES SalariosMinimos(Id) ON DELETE SET NULL
+    FOREIGN KEY(FactorCobroId) REFERENCES FactoresCobro(Id) ON DELETE SET NULL
 );
 
 
