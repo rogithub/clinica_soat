@@ -84,7 +84,7 @@ Desarrollar un sistema mínimo funcional (MVP) que permita **registrar, validar,
 
 ## 🛠️ Herramientas Sugeridas
 
-| Función                      | Herramienta recomendada                  |
+| Función                     | Herramienta recomendada                  |
 |-----------------------------|------------------------------------------|
 | Backend                     | .NET Core                                |
 | Base de datos               | PostgreSQL                               |
@@ -92,6 +92,12 @@ Desarrollar un sistema mínimo funcional (MVP) que permita **registrar, validar,
 | Validación RIPS-FEV         | API Docker o cliente-servidor del MinSalud |
 | XML/JSON manejo             | Librerías estándar en tu stack elegido   |
 
+
+
+
+
+## 📖 Licencia
+
+Este proyecto está licenciado bajo los términos de la [Apache License 2.0](LICENSE).
+
 ---
-
-
