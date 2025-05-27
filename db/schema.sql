@@ -96,7 +96,6 @@ CREATE TABLE GruposTarifarios (
     Id SERIAL PRIMARY KEY,
     Codigo INTEGER UNIQUE NOT NULL,  -- ej. 9, 10, 11, etc.
     Descripcion TEXT NOT NULL,        -- ej. 'Grupo Quirúrgico 9'
-    Factor NUMERIC NOT NULL -- Multiplicador sobre el 
 );
 
 CREATE TABLE IF NOT EXISTS Procedimientos  (
@@ -110,7 +109,7 @@ CREATE TABLE IF NOT EXISTS Procedimientos  (
     GrupoTarifarioId  INTEGER,                       -- puede ser nulo
     FOREIGN KEY(UserUpdatedId) REFERENCES Users(Id) ON DELETE SET NULL,
     FOREIGN KEY(CategoriaClinicaId) REFERENCES CategoriasClinicas(Id) ON DELETE SET NULL,
-    FOREIGN KEY(GruposTarifarios) REFERENCES GruposTarifarios(Id) ON DELETE SET NULL
+    FOREIGN KEY(GrupoTarifarioId) REFERENCES GruposTarifarios(Id) ON DELETE SET NULL
 );
 
 CREATE INDEX idx_procedimientos_codigo ON Procedimientos (Codigo);
