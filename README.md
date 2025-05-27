@@ -86,12 +86,12 @@ Desarrollar un sistema mínimo funcional (MVP) que permita **registrar, validar,
 
 | Función                      | Herramienta recomendada                  |
 |-----------------------------|------------------------------------------|
-| Backend                     | Node.js, Django, Laravel o .NET Core     |
-| Base de datos               | PostgreSQL o MySQL                       |
-| Frontend                    | React, Vue o Bootstrap                   |
+| Backend                     | .NET Core                                |
+| Base de datos               | PostgreSQL                               |
+| Frontend                    | MVC, knockout, javascrip                 |
 | Validación RIPS-FEV         | API Docker o cliente-servidor del MinSalud |
 | XML/JSON manejo             | Librerías estándar en tu stack elegido   |
 
 ---
 
-¿Siguiente paso? Puedes comenzar diseñando el modelo de datos o la interfaz para ingresar un accidente de tránsito con sus respectivos servicios.
+
